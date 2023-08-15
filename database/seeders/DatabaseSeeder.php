@@ -2,6 +2,11 @@
 
 namespace Database\Seeders;
 
+use App\Models\Company;
+use App\Models\Team;
+use App\Models\Role;
+use App\Models\Responsibility;
+use App\Models\Employee;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -14,7 +19,12 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
+        // \App\Models\User::factory(4)->unverified()->create();
+        // Company::factory(14)->create();
+        // Team::factory(42)->create();
+        // Role::factory(42)->create();
+        // Responsibility::factory(200)->create();
+        // Employee::factory(1000)->create();
 
         // \App\Models\User::factory()->create([
         //     'name' => 'Test User',
