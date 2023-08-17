@@ -12,7 +12,7 @@ class Role extends Model
 
     protected $fillable = [
         'name',
-        'comapny_id'
+        'company_id'
     ];
 
     public function company()

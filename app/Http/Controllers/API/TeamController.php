@@ -89,7 +89,8 @@ class TeamController extends Controller
             // Update Team
             $team->update([
                 'name' => $request->name,
-                'icon' => $path,
+                //untuk pengkondisian ketika icon tidak dirubah maka akan menggunakan data sebelumnya
+                'icon' => isset($path) ? $path : $team->icon,  
                 'company_id' => $request->company_id
             ]);
 

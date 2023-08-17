@@ -113,8 +113,8 @@ class CompanyController extends Controller
 
             // update Company
             $company->update([
-                'name' => $request->name,
-                'logo' => $path
+                'name' => $request->name,'logo' => isset($path) ? $path : $company->logo
+                // if isset path = jika ada datanya maka akan menggunakan $path, jika tidak ada maka akan menggunakan data sebelumnya
             ]);
 
             return ResponseFormatter::success($company, 'Company Updated');
